@@ -1,10 +1,1068 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
 <head>
-  <title>VS Terminal Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Aina Sofielia – Mobile App Developer & Flutter Specialist. Building enterprise, healthcare, and AI-driven mobile apps from Shah Alam, Malaysia." />
+  <meta name="keywords"
+    content="Flutter Developer, Mobile App Developer, AI, Healthcare App, Portfolio, Aina Sofielia, Malaysia" />
+  <title>Aina Sofielia | Mobile App Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700;1,800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Hello World 🚀</h1>
-  <p>Built from VS Code terminal.</p>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-text">AS</span>
+        <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode"
+          title="Toggle light/dark mode">
+          <svg id="iconSun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" style="display:none">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg id="iconMoon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" />
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger"
+          aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-aos="fade-up">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Internship &nbsp;·&nbsp; Oct 2025 – Mar 2026
+        </div>
+        <h1 class="hero-title">
+          <span class="title-first">Aina</span><span class="gradient-text title-last">Sofielia</span>
+        </h1>
+        <p class="hero-subtitle" id="heroSubtitle">Mobile App Developer &nbsp;·&nbsp; Flutter Specialist &nbsp;·&nbsp;
+          AI-Driven Solutions</p>
+        <p class="hero-description">
+          A motivated Computer Science student and Mobile Developer with hands-on experience building enterprise
+          workforce apps, healthcare systems, telemedicine platforms, and AI-powered mobile applications using Flutter
+          and Firebase.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M9 9h6M9 13h4" />
+            </svg>
+            View Projects
+          </a>
+          <a href="#" class="btn btn-secondary" id="resumeBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+            </svg>
+            Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+            </svg>
+            Let's Talk
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" id="stat1">6+</span>
+            <span class="stat-label">Apps Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" id="stat2">3.64</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" id="stat3">5x</span>
+            <span class="stat-label">Dean's List</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+        <!-- Profile Photo Frame -->
+        <div class="profile-frame-wrap">
+          <div class="profile-ring-outer"></div>
+          <div class="profile-ring-inner"></div>
+          <div class="profile-photo-container">
+            <!-- Replace 'profile.jpg' with your actual photo file placed in the project folder -->
+            <img src="profile.jpg" alt="Aina Sofielia" class="profile-photo" id="profilePhoto"
+              onerror="this.style.display='none'; document.getElementById('profilePlaceholder').style.display='flex';" />
+            <!-- Shown if photo not yet added -->
+            <div class="profile-placeholder" id="profilePlaceholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="56" height="56">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+              <span>Add photo.jpg</span>
+            </div>
+          </div>
+          <div class="profile-glow"></div>
+          <!-- Floating chips around photo -->
+          <div class="float-chip chip-flutter glass-card">
+            <svg class="chip-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899"
+              stroke-width="2">
+              <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+            </svg>
+            <div>
+              <div class="chip-label">Flutter</div>
+              <div class="chip-sub">Cross-Platform</div>
+            </div>
+          </div>
+          <div class="float-chip chip-dart glass-card">
+            <svg class="chip-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+            <div>
+              <div class="chip-label">Dart 3.0</div>
+              <div class="chip-sub">Language</div>
+            </div>
+          </div>
+          <div class="float-chip chip-firebase glass-card">
+            <svg class="chip-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899"
+              stroke-width="2">
+              <path d="M4 20L8.5 4l4.5 9 3-6 4 13" />
+            </svg>
+            <div>
+              <div class="chip-label">Firebase</div>
+              <div class="chip-sub">Backend</div>
+            </div>
+          </div>
+          <div class="float-chip chip-ai glass-card">
+            <svg class="chip-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ec4899"
+              stroke-width="2">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4" />
+            </svg>
+            <div>
+              <div class="chip-label">AI · FYP</div>
+              <div class="chip-sub">Inner Balance</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section class="section about-section bg-mesh" id="about">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Passionate mobile developer crafting impactful solutions from Malaysia</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right">
+          <p class="about-intro">
+            I'm a final-year <strong>Computer Science student</strong> at Management &amp; Science University (MSU),
+            specializing in mobile app development with Flutter, Firebase, and AI integration. My journey spans from
+            academic projects to real-world enterprise and healthcare applications during my internship at
+            <strong>TARSOFT Sdn Bhd</strong>.
+          </p>
+          <p class="about-body">
+            I'm deeply passionate about crafting mobile experiences that solve real problems. From helping plantation
+            workers digitize workflows, to enabling telemedicine consultations, to building AI-driven mental health
+            support tools. My goal is to contribute to a team that values innovation, clean code, and quality design.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="hi-icon"><svg viewBox="0 0 24 24">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                  <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                </svg></div>
+              <div>
+                <strong>Bachelor in Computer Science (Hons)</strong>
+                <span>Management &amp; Science University &nbsp;·&nbsp; CGPA 3.64</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon"><svg viewBox="0 0 24 24">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8M12 17v4" />
+                </svg></div>
+              <div>
+                <strong>Diploma in Information Technology</strong>
+                <span>CGPA 3.61 &nbsp;·&nbsp; Dean's List ×5</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="hi-icon"><svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+                </svg></div>
+              <div>
+                <strong>INHA Summer School 2023</strong>
+                <span>International Academic Program</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-cards" data-aos="fade-left" data-aos-delay="150">
+          <div class="info-card glass-card">
+            <div class="ic-icon"><svg viewBox="0 0 24 24">
+                <rect x="7" y="2" width="10" height="20" rx="2" />
+                <path d="M12 18h.01" />
+              </svg></div>
+            <h4>Mobile First</h4>
+            <p>Building high-performance Flutter apps for Android &amp; iOS with pixel-perfect UI</p>
+          </div>
+          <div class="info-card glass-card">
+            <div class="ic-icon"><svg viewBox="0 0 24 24">
+                <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
+              </svg></div>
+            <h4>API Integration</h4>
+            <p>Seamlessly connecting Flutter frontends with REST APIs and Firebase backends</p>
+          </div>
+          <div class="info-card glass-card">
+            <div class="ic-icon"><svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" />
+              </svg></div>
+            <h4>AI Integration</h4>
+            <p>Integrating AI voice, intelligent flows, and smart automation in mobile apps</p>
+          </div>
+          <div class="info-card glass-card">
+            <div class="ic-icon"><svg viewBox="0 0 24 24">
+                <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+              </svg></div>
+            <h4>UI/UX Design</h4>
+            <p>Crafting elegant, accessible, and intuitive interfaces for real-world users</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section class="section experience-section bg-mesh" id="experience">
+    <div class="mesh-orb mesh-orb-1" style="background:#6366f1; opacity:0.1; top:10%; right:5%;"></div>
+    <div class="mesh-orb mesh-orb-2" style="background:var(--pink-6); opacity:0.1; bottom:20%; left:10%;"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">My Journey</span>
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Real-world impact through enterprise and healthcare mobile development</p>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot training"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-badge training-badge">Professional Training</div>
+                <h3 class="timeline-title">Flutter Training Program</h3>
+                <p class="timeline-company">Professional Development</p>
+              </div>
+            </div>
+            <div class="training-modules">
+              <div class="module-item">
+                <div class="module-dot"></div>Advanced Flutter Fundamentals
+              </div>
+              <div class="module-item">
+                <div class="module-dot"></div>State Management Concepts
+              </div>
+              <div class="module-item">
+                <div class="module-dot"></div>API Integration Techniques
+              </div>
+              <div class="module-item">
+                <div class="module-dot"></div>Performance Optimization
+              </div>
+              <div class="module-item">
+                <div class="module-dot"></div>UI/UX Best Practices
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-badge">Enterprise &nbsp;·&nbsp; Internship</div>
+                <h3 class="timeline-title">Mobile Developer Intern</h3>
+                <p class="timeline-company">TARSOFT Sdn Bhd</p>
+              </div>
+              <div class="timeline-period">
+                <span>Flutter &amp; Dart</span>
+                <span class="period-tag">Oct 2025 – Mar 2026</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Developed and enhanced multiple enterprise-level mobile applications for workforce
+              management, healthcare, and agricultural sectors. Integrated REST APIs, implemented feature modules, and
+              improved UI/UX across products in active production.</p>
+            <div class="timeline-responsibilities">
+              <div class="resp-item">
+                <div class="resp-dot"></div>Developed and enhanced enterprise Flutter mobile applications
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Integrated REST APIs and managed state across app modules
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Implemented UI/UX improvements and new feature modules
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Debugged and optimized performance across worker &amp; client apps
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Participated in internal testing and deployment pipelines
+              </div>
+            </div>
+            <div class="timeline-projects-involved">
+              <span class="projects-label">Projects:</span>
+              <span class="proj-badge">FGV iSeed Palm Worker App</span>
+              <span class="proj-badge">Tarsoft Care App</span>
+              <span class="proj-badge">Putra Care App</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <div class="timeline-badge">Developer Role</div>
+                <h3 class="timeline-title">Flutter Developer &amp; Programmer</h3>
+                <p class="timeline-company">AQwise Company</p>
+              </div>
+
+              <div class="timeline-period"><span>FlutterFlow &amp; Firebase</span>
+                <span class="period-tag">March 2023 –
+                  June 2023</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Built and deployed cross-platform Flutter applications with Firebase integration
+              for authentication and real-time data management.</p>
+            <div class="timeline-responsibilities">
+              <div class="resp-item">
+                <div class="resp-dot"></div>Developed apps using FlutterFlow and Dart
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Integrated Firebase Authentication and Realtime Database
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Tested and deployed cross-platform builds using Android Studio
+              </div>
+              <div class="resp-item">
+                <div class="resp-dot"></div>Improved UI components and backend logic
+              </div>
+              <div class="timeline-projects-involved">
+                <span class="projects-label">Projects:</span>
+                <span class="proj-badge">iQuran4oku App</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section class="section projects-section bg-gradient-animate" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">My Work</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Enterprise systems, healthcare platforms, and AI-powered mobile applications</p>
+      </div>
+
+      <!-- PROJECT SLIDESHOW -->
+      <div class="proj-slideshow" data-aos="fade-up" data-aos-delay="100">
+        <div class="proj-slides" id="projSlides">
+
+          <!-- SLIDE 1: FGV iSeed (mobile) -->
+          <div class="proj-slide" data-category="enterprise">
+            <div class="proj-device-wrap">
+              <div class="proj-phone-frame">
+                <div class="proj-phone-notch"></div>
+                <div class="proj-phone-screen" style="background:linear-gradient(160deg,#1a1a2e,#16213e)">
+                  <div class="pps-bar" style="background:linear-gradient(90deg,#ec4899,#be185d)"></div>
+                  <div class="pps-row">
+                    <div class="pps-avatar" style="background:linear-gradient(135deg,#ec4899,#be185d)"></div>
+                    <div>
+                      <div class="pps-line" style="width:80px"></div>
+                      <div class="pps-line" style="width:50px;opacity:.5;margin-top:4px"></div>
+                    </div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(236,72,153,0.12);border:1px solid rgba(236,72,153,0.2)">
+                    <div class="pps-line" style="width:70%"></div>
+                    <div class="pps-line" style="width:50%;opacity:.6;margin-top:6px"></div>
+                    <div class="pps-btn" style="background:linear-gradient(90deg,#ec4899,#be185d)"></div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(255,255,255,0.04)">
+                    <div class="pps-line" style="width:90%"></div>
+                    <div class="pps-line" style="width:60%;opacity:.5;margin-top:6px"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="proj-device-label">iOS / Android</span>
+            </div>
+            <div class="proj-slide-info">
+              <div class="proj-slide-meta">
+                <span class="project-category cat-enterprise">Enterprise</span>
+                <span class="project-role">Mobile Developer</span>
+              </div>
+              <h3 class="proj-slide-title">FGV iSeed Palm Worker App</h3>
+              <p class="proj-slide-desc">Mobile app for palm plantation workers to digitally record operational tasks
+                and streamline field reporting. Built to work in demanding outdoor conditions.</p>
+              <ul class="proj-slide-features">
+                <li>Task recording and validation workflows</li>
+                <li>Data sync with backend REST APIs</li>
+                <li>Structured form-based data collection</li>
+                <li>Field-friendly UI for outdoor use</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">REST API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 2: Tarsoft Care (mobile) -->
+          <div class="proj-slide" data-category="enterprise">
+            <div class="proj-device-wrap">
+              <div class="proj-phone-frame">
+                <div class="proj-phone-notch"></div>
+                <div class="proj-phone-screen" style="background:linear-gradient(160deg,#0d1117,#161b22)">
+                  <div class="pps-bar" style="background:linear-gradient(90deg,#ec4899,#6366f1)"></div>
+                  <div class="pps-tabs">
+                    <div class="pps-tab active-tab">Overview</div>
+                    <div class="pps-tab">Leave</div>
+                    <div class="pps-tab">Tickets</div>
+                  </div>
+                  <div class="pps-card pps-stat-card">
+                    <div class="pps-stat">
+                      <div class="pps-stat-val" style="color:#ec4899">08:32</div>
+                      <div class="pps-stat-lbl">Clock In</div>
+                    </div>
+                    <div class="pps-stat">
+                      <div class="pps-stat-val">Active</div>
+                      <div class="pps-stat-lbl">Status</div>
+                    </div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(236,72,153,0.06)">
+                    <div class="pps-line" style="width:80%"></div>
+                    <div class="pps-line" style="width:55%;opacity:.5;margin-top:6px"></div>
+                    <div class="pps-btn" style="background:linear-gradient(90deg,#ec4899,#6366f1)"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="proj-device-label">iOS / Android</span>
+            </div>
+            <div class="proj-slide-info">
+              <div class="proj-slide-meta">
+                <span class="project-category cat-enterprise">Enterprise · Featured</span>
+                <span class="project-role">Lead Feature Dev</span>
+              </div>
+              <h3 class="proj-slide-title">Tarsoft Care – Workforce Management</h3>
+              <p class="proj-slide-desc">Enterprise workforce management with dual worker/client modules, attendance
+                tracking, leave management, and a helpdesk ticketing system used in real-world production.</p>
+              <ul class="proj-slide-features">
+                <li>Attendance tracking and clock-in/out</li>
+                <li>Leave management and approval flows</li>
+                <li>Helpdesk ticketing with attachments</li>
+                <li>Real-time notifications via API</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">REST API</span>
+                <span class="tech-badge">SharedPrefs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 3: Putra Care (mobile) -->
+          <div class="proj-slide" data-category="healthcare">
+            <div class="proj-device-wrap">
+              <div class="proj-phone-frame">
+                <div class="proj-phone-notch"></div>
+                <div class="proj-phone-screen" style="background:linear-gradient(160deg,#0a1628,#0d2137)">
+                  <div class="pps-bar" style="background:linear-gradient(90deg,#0d9488,#14b8a6)"></div>
+                  <div class="pps-row">
+                    <div class="pps-avatar" style="background:linear-gradient(135deg,#0d9488,#14b8a6)"></div>
+                    <div>
+                      <div class="pps-line" style="width:90px"></div>
+                      <div class="pps-line" style="width:60px;opacity:.5;margin-top:4px"></div>
+                    </div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(20,184,166,0.1);border:1px solid rgba(20,184,166,0.2)">
+                    <div class="pps-line" style="width:75%"></div>
+                    <div class="pps-line" style="width:50%;opacity:.6;margin-top:6px"></div>
+                    <div class="pps-btn" style="background:linear-gradient(90deg,#0d9488,#14b8a6)"></div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(20,184,166,0.05)">
+                    <div class="pps-line" style="width:85%"></div>
+                    <div class="pps-line" style="width:55%;opacity:.5;margin-top:6px"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="proj-device-label">iOS / Android</span>
+            </div>
+            <div class="proj-slide-info">
+              <div class="proj-slide-meta">
+                <span class="project-category cat-healthcare">Healthcare</span>
+                <span class="project-role">Developer</span>
+              </div>
+              <h3 class="proj-slide-title">Putra Care – Hospital &amp; Telemedicine</h3>
+              <p class="proj-slide-desc">Healthcare app for hospital operations and telemedicine appointments, designed
+                for both patients and medical professionals in a clinical environment.</p>
+              <ul class="proj-slide-features">
+                <li>Appointment scheduling by specialty</li>
+                <li>Telemedicine consultation workflow</li>
+                <li>User and patient management</li>
+                <li>Healthcare-focused accessible UI</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">Backend API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 4: Inner Balance (mobile / AI) -->
+          <div class="proj-slide" data-category="ai">
+            <div class="proj-device-wrap">
+              <div class="proj-phone-frame">
+                <div class="proj-phone-notch"></div>
+                <div class="proj-phone-screen" style="background:linear-gradient(160deg,#1a0a0a,#2d1515)">
+                  <div class="pps-bar" style="background:linear-gradient(90deg,#f59e0b,#ef4444)"></div>
+                  <div class="pps-wave">
+                    <div class="pps-wb" style="height:8px"></div>
+                    <div class="pps-wb" style="height:16px"></div>
+                    <div class="pps-wb" style="height:22px"></div>
+                    <div class="pps-wb" style="height:12px"></div>
+                    <div class="pps-wb" style="height:20px"></div>
+                    <div class="pps-wb" style="height:26px"></div>
+                    <div class="pps-wb" style="height:14px"></div>
+                    <div class="pps-wb" style="height:18px"></div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.15)">
+                    <div class="pps-line" style="width:85%"></div>
+                    <div class="pps-line" style="width:60%;opacity:.6;margin-top:6px"></div>
+                  </div>
+                  <div class="pps-btn"
+                    style="background:linear-gradient(90deg,#f59e0b,#ef4444);width:80%;margin:8px auto 0"></div>
+                </div>
+              </div>
+              <span class="proj-device-label">iOS / Android · FYP</span>
+            </div>
+            <div class="proj-slide-info">
+              <div class="proj-slide-meta">
+                <span class="project-category cat-ai">AI · Final Year</span>
+                <span class="project-role">Lead Developer</span>
+              </div>
+              <h3 class="proj-slide-title">Inner Balance – AI Mental Health App</h3>
+              <p class="proj-slide-desc">My Final Year Project. An AI-driven mental health consultation app with voice
+                interaction, sentiment tracking, and intelligent support flows — built with Flutter and Firebase.</p>
+              <ul class="proj-slide-features">
+                <li>AI voice interaction and consultation</li>
+                <li>Real-time mental wellness tracking</li>
+                <li>Firebase Auth and Firestore database</li>
+                <li>Sentiment-aware conversation flow</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">AI Integration</span>
+                <span class="tech-badge">Voice API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 5: iQuran4OKU (mobile) -->
+          <div class="proj-slide" data-category="healthcare">
+            <div class="proj-device-wrap">
+              <div class="proj-phone-frame">
+                <div class="proj-phone-notch"></div>
+                <div class="proj-phone-screen" style="background:linear-gradient(160deg,#052e16,#14532d)">
+                  <div class="pps-bar" style="background:linear-gradient(90deg,#10b981,#059669)"></div>
+                  <div class="pps-text-lines">
+                    <div class="pps-line" style="width:100%"></div>
+                    <div class="pps-line" style="width:95%"></div>
+                    <div class="pps-line" style="width:90%"></div>
+                    <div class="pps-line" style="width:100%"></div>
+                    <div class="pps-line" style="width:85%"></div>
+                    <div class="pps-line" style="width:95%"></div>
+                  </div>
+                  <div class="pps-card" style="background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2)">
+                    <div class="pps-line" style="width:70%"></div>
+                    <div class="pps-line" style="width:50%;opacity:.6;margin-top:6px"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="proj-device-label">iOS / Android</span>
+            </div>
+            <div class="proj-slide-info">
+              <div class="proj-slide-meta">
+                <span class="project-category cat-healthcare">Accessibility</span>
+                <span class="project-role">Developer</span>
+              </div>
+              <h3 class="proj-slide-title">iQuran4OKU – Accessible Quran App</h3>
+              <p class="proj-slide-desc">A mobile Quran application designed with an accessibility-first mindset for OKU
+                users, featuring inclusive navigation patterns and adaptive display modes.</p>
+              <ul class="proj-slide-features">
+                <li>Accessibility-first UI design</li>
+                <li>Large text and high contrast modes</li>
+                <li>OKU-friendly navigation patterns</li>
+                <li>Cross-platform Flutter build</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">Accessibility</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SLIDE 6: WishMeal (WEB) -->
+          <div class="proj-slide" data-category="web">
+            <div class="proj-device-wrap">
+              <!-- Web Browser Frame -->
+              <div class="proj-browser-frame">
+                <div class="proj-browser-bar">
+                  <div class="proj-browser-dots">
+                    <span style="background:#ff5f57"></span>
+                    <span style="background:#febc2e"></span>
+                    <span style="background:#28c840"></span>
+                  </div>
+                  <div class="proj-browser-url">wishmeal.app</div>
+                </div>
+                <div class="proj-browser-screen" style="background:linear-gradient(160deg,#1e1b4b,#312e81)">
+                  <div class="pps-nav">
+                    <div class="pps-nav-logo" style="background:linear-gradient(90deg,#6366f1,#8b5cf6)"></div>
+                    <div class="pps-nav-links">
+                      <div class="pps-line" style="width:40px"></div>
+                      <div class="pps-line" style="width:50px"></div>
+                      <div class="pps-line" style="width:35px"></div>
+                    </div>
+                  </div>
+                  <div class="pps-hero-web">
+                    <div class="pps-line" style="width:60%;height:10px;border-radius:4px"></div>
+                    <div class="pps-line" style="width:80%;opacity:.5;margin-top:6px"></div>
+                    <div class="pps-btn" style="background:linear-gradient(90deg,#6366f1,#8b5cf6);width:80px"></div>
+                  </div>
+                  <div class="pps-web-cards">
+                    <div class="pps-web-card" style="background:rgba(99,102,241,0.12)"></div>
+                    <div class="pps-web-card" style="background:rgba(139,92,246,0.12)"></div>
+                    <div class="pps-web-card" style="background:rgba(99,102,241,0.08)"></div>
+                  </div>
+                </div>
+              </div>
+              <span class="proj-device-label">Web Application</span>
+            </div>
+            <div class="proj-slide-info">
+              <div class="proj-slide-meta">
+                <span class="project-category cat-web">Web · Diploma FYP</span>
+                <span class="project-role">Full Stack Dev</span>
+              </div>
+              <h3 class="proj-slide-title">WishMeal – Recipe &amp; Meal Organizer</h3>
+              <p class="proj-slide-desc">A web-based meal planning and recipe management platform with dynamic data
+                visualization and dietary tracking. Built as my Diploma Final Year Project.</p>
+              <ul class="proj-slide-features">
+                <li>Recipe organization and categorization</li>
+                <li>Meal tracking and dietary planning</li>
+                <li>Dynamic data graphs and analytics</li>
+                <li>Responsive web interface</li>
+              </ul>
+              <div class="tech-stack">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /proj-slides -->
+
+        <!-- Slideshow Controls -->
+        <div class="proj-controls">
+          <button class="proj-arrow proj-prev" id="projPrev" aria-label="Previous project">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+          <div class="proj-dots" id="projDots"></div>
+          <button class="proj-arrow proj-next" id="projNext" aria-label="Next project">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+        <p class="proj-counter"><span id="projCurrent">1</span> / <span id="projTotal">6</span></p>
+      </div><!-- /proj-slideshow -->
+
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section class="section skills-section full-color-bg" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">The Craft</span>
+        <h2 class="section-title">My Toolkit</h2>
+        <p class="section-subtitle">Technologies I've lived with, shipped with, and grown with</p>
+      </div>
+      <!-- Documentary-style skills -->
+      <div class="skills-story" data-aos="fade-up">
+
+        <!-- Chapter 1 -->
+        <div class="skill-chapter glass-card">
+          <div class="chapter-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="7" y="2" width="10" height="20" rx="2" />
+              <path d="M12 18h.01" />
+            </svg>
+          </div>
+          <div class="chapter-body">
+            <div class="chapter-label">Chapter 01 · My Core</div>
+            <h3 class="chapter-title">Mobile Development</h3>
+            <p class="chapter-desc">Flutter was the tool that changed everything. I picked it up, fell in love with how
+              expressive the UI framework is, and never looked back. From simple screens to complex enterprise apps —
+              Flutter is my home.</p>
+            <div class="chapter-tags">
+              <span class="chtag chtag-primary">Flutter</span>
+              <span class="chtag chtag-primary">Dart</span>
+              <span class="chtag chtag-secondary">FlutterFlow</span>
+              <span class="chtag chtag-secondary">Android Studio</span>
+              <span class="chtag chtag-secondary">Visual Studio Code</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 2 -->
+        <div class="skill-chapter glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="chapter-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 20L8.5 4l4.5 9 3-6 4 13" />
+            </svg>
+          </div>
+          <div class="chapter-body">
+            <div class="chapter-label">Chapter 02 · The Bridge</div>
+            <h3 class="chapter-title">Backend &amp; APIs</h3>
+            <p class="chapter-desc">Every great app keeps a secret — its data layer. I've connected Flutter frontends to
+              Firebase backends, integrated complex REST APIs, and debugged the requests that made real healthcare and
+              enterprise apps run.</p>
+            <div class="chapter-tags">
+              <span class="chtag chtag-primary">REST API</span>
+              <span class="chtag chtag-primary">Firebase</span>
+              <span class="chtag chtag-secondary">Firestore</span>
+              <span class="chtag chtag-secondary">Firebase Auth</span>
+              <span class="chtag chtag-secondary">MySQL</span>
+              <span class="chtag chtag-secondary">Swagger</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 3 -->
+        <div class="skill-chapter glass-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="chapter-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3" />
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4" />
+            </svg>
+          </div>
+          <div class="chapter-body">
+            <div class="chapter-label">Chapter 03 · The Future</div>
+            <h3 class="chapter-title">AI Integration</h3>
+            <p class="chapter-desc">For my Final Year Project, I stepped into AI — integrating voice recognition,
+              sentiment analysis, and intelligent conversation flows into a Flutter app. It changed how I think about
+              software.</p>
+            <div class="chapter-tags">
+              <span class="chtag chtag-primary">AI Voice APIs</span>
+              <span class="chtag chtag-primary">Sentiment Analysis</span>
+              <span class="chtag chtag-secondary">Gemini / LLM</span>
+              <span class="chtag chtag-secondary">Smart Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 4 -->
+        <div class="skill-chapter glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="chapter-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <div class="chapter-body">
+            <div class="chapter-label">Chapter 04 · The Foundation</div>
+            <h3 class="chapter-title">Languages &amp; Web</h3>
+            <p class="chapter-desc">Dart is my first language, but I've worked with Java, HTML/CSS, and SQL across
+              academic and internship projects — building a well-rounded development perspective.</p>
+            <div class="chapter-tags">
+              <span class="chtag chtag-primary">Dart</span>
+              <span class="chtag chtag-secondary">Java</span>
+              <span class="chtag chtag-secondary">HTML &amp; CSS</span>
+              <span class="chtag chtag-secondary">SQL</span>
+              <span class="chtag chtag-secondary">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chapter 5 (tools) -->
+        <div class="skill-chapter skill-chapter-wide glass-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="chapter-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z" />
+            </svg>
+          </div>
+          <div class="chapter-body">
+            <div class="chapter-label">The Everyday Toolkit</div>
+            <h3 class="chapter-title">Tools, Workflow &amp; Soft Skills</h3>
+            <p class="chapter-desc">The tools that keep things running and the skills that make collaboration actually
+              work.</p>
+            <div class="chapter-tags">
+              <span class="chtag chtag-tool">VS Code</span>
+              <span class="chtag chtag-tool">Git &amp; GitHub</span>
+              <span class="chtag chtag-tool">Postman</span>
+              <span class="chtag chtag-tool">Android Studio</span>
+              <span class="chtag chtag-tool">Figma</span>
+              <span class="chtag chtag-tool">Agile</span>
+              <span class="chtag chtag-lang">English</span>
+              <span class="chtag chtag-lang">Bahasa Melayu</span>
+              <span class="chtag chtag-soft">UI/UX Thinking</span>
+              <span class="chtag chtag-soft">Clean Code</span>
+              <span class="chtag chtag-soft">Team Collaboration</span>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /skills-story -->
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section class="section achievements-section bg-mesh" id="achievements">
+    <div class="mesh-orb mesh-orb-1" style="background:var(--pink-5); opacity:0.1; top:20%; left:10%;"></div>
+    <div class="mesh-orb mesh-orb-2" style="background:var(--pink-7); opacity:0.1; bottom:10%; right:10%;"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-subtitle">Milestones that define my academic and professional journey</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card" data-aos="fade-up">
+          <div class="ach-icon"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="8" r="6" />
+              <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+            </svg></div>
+          <h3>Dean's List Award ×5</h3>
+          <p>Achieved Dean's List recognition five consecutive times throughout both Diploma and Bachelor's programs at
+            MSU, reflecting sustained academic excellence.</p>
+          <div class="ach-glow"></div>
+        </div>
+        <div class="achievement-card glass-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="ach-icon"><svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" />
+            </svg></div>
+          <h3>INHA Summer School 2023</h3>
+          <p>Participated in the INHA University International Summer School program, gaining exposure to global
+            academic environments and cross-cultural collaboration.</p>
+          <div class="ach-glow"></div>
+        </div>
+        <div class="achievement-card glass-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="ach-icon"><svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg></div>
+          <h3>Workshop Coordinator</h3>
+          <p>"Future Skills: From Engaging Presentation to AI Proficiency" – Organized a professional skills workshop
+            combining presentation mastery with AI tools.</p>
+          <div class="ach-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section class="section contact-section bg-mesh" id="contact">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+    <div class="mesh-orb mesh-orb-4"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-subtitle">Actively seeking an internship from October 2025 – March 2026</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-info-header">
+            <h3>Open to Opportunities</h3>
+            <p>I'm looking for an internship where I can contribute to impactful projects, grow as a mobile developer,
+              and deliver real value to your team.</p>
+          </div>
+          <div class="contact-items">
+            <a href="mailto:ainasofielia3@gmail.com" class="contact-item glass-card">
+              <div class="ci-icon"><svg viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg></div>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">ainasofielia3@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:01115711129" class="contact-item glass-card">
+              <div class="ci-icon"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.22 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.29 6.29l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                </svg></div>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <span class="contact-item-value">011-15711129</span>
+              </div>
+            </a>
+            <div class="contact-item glass-card">
+              <div class="ci-icon"><svg viewBox="0 0 24 24">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg></div>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Shah Alam, Selangor, Malaysia</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn glass-card" id="githubLink">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="#" class="social-btn glass-card" id="linkedinLink">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-aos="fade-left">
+          <form class="contact-form glass-card" id="contactForm">
+            <h3 class="form-title">Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName">Your Name</label>
+                <input type="text" id="contactName" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="contactEmail">Email Address</label>
+                <input type="email" id="contactEmail" placeholder="hello@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" placeholder="Internship Opportunity at [Company]" />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" rows="5" placeholder="Tell me about your company and the opportunity..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+            <p class="form-note" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">AS</span>
+        <p>Aina Sofielia &nbsp;·&nbsp; Mobile App Developer</p>
+      </div>
+      <p class="footer-copy">© 2025 Aina Sofielia Binti Zaimi Azrin. All rights reserved.</p>
+      <a href="#home" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <polyline points="18 15 12 9 6 15" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
