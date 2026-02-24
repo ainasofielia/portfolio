@@ -168,29 +168,9 @@ if (contactForm) {
 }
 
 // ============================================================
-// RESUME BUTTON – placeholder toast
+// RESUME BUTTON
 // ============================================================
-const resumeBtn = document.getElementById('resumeBtn');
-if (resumeBtn) {
-    resumeBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        if (document.querySelector('.resume-toast')) return;
-        const toast = document.createElement('div');
-        toast.className = 'resume-toast';
-        toast.textContent = 'Add resume.pdf to your portfolio folder and update the href.';
-        toast.style.cssText = `
-      position:fixed;bottom:28px;left:50%;transform:translateX(-50%);
-      background:var(--bg-card);border:1px solid var(--glass-border-h);
-      color:var(--text);padding:12px 24px;border-radius:99px;
-      font-size:0.85rem;font-weight:600;z-index:9999;
-      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-      box-shadow:0 8px 24px rgba(236,72,153,0.2);
-      animation:fadeInCard 0.3s ease;white-space:nowrap;
-    `;
-        document.body.appendChild(toast);
-        setTimeout(() => toast.remove(), 4000);
-    });
-}
+// Note: Handled directly via HTML href and download attributes.
 
 // ============================================================
 // TYPEWRITER SUBTITLE
